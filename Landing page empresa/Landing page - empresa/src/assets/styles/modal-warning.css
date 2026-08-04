@@ -1,0 +1,70 @@
+.modal-warning {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+
+/* Corpo do modal */
+.modal-warning > .body-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 400px;
+    height: 280px;
+    padding: 1rem;
+    animation: open-modal-warning .2s linear;
+}
+
+@keyframes open-modal-warning {
+    from {
+        transform: scale(.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Icone */
+.modal-warning > .body-modal > .icon-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    /* Icone de aviso */
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Informação */
+.modal-warning > .body-modal > p {
+    width: 100%;
+    text-align: center;
+    font-size: .9em;
+    margin: .8rem 0;
+
+}
+
+/* Botão de confirmação */
+.modal-warning > .body-modal > .btn-confirm-close {
+    width: 300px;
+    margin-top: 20px;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #7946a8;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}

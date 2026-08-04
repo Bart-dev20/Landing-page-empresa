@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(121, 70, 168, 0.39);
+    border-top: 1px solid #7946a8;
+    margin-top: 8rem;
+    padding: 0 3rem;
+}
+
+/* Titulo */
+footer > .title-footer {
+    color: #fff;
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Midias Sociais */
+footer > .social-midia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .box-social-midia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #935cc7;
+        background-color: rgba(121, 70, 168, 0.555);
+        border-radius: 4px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: all .2s;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover {
+            transform: translateY(-1.5px);
+            box-shadow: 0 3px 8px #7946a8e8;
+        }
+    }
+    
+}

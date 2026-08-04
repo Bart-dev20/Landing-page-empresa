@@ -1,0 +1,73 @@
+#type-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 9rem;
+    padding: 0 0rem;
+}
+
+/* Titulo */
+#type-service > .title-type-services {
+    width: 100%;
+    border-left: 5px solid #7946a8;
+    padding-left: 1rem;
+
+    h2 {
+        font-size: 1.5em;
+        color: #7946a8;
+    }
+}
+
+/* Cards */
+#type-service > .container-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#type-service > .container-cards > .card-type-service {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #7946a8;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #7946a82c;
+}
+
+#type-service > .container-cards > .card-type-service > .icon-type-service {
+    width: 100%;
+
+    img {
+        width: 30px;
+        margin-bottom: .5rem;
+    }
+
+    h3 {
+        font-size: 1em;
+        color: #fff;
+    }
+}
+
+/* Descrição */
+#type-service > .container-cards > .card-type-service > .decriptions-card {
+    color: #fff;
+    font-size: .8em;
+    margin-top: .5rem;
+}
+
+/* Fala-me mais */
+#type-service > .tell-me-more-about {
+    width: 100%;
+    height: auto;
+    padding: 1rem 5rem;
+    
+    p {
+        color: #fff;
+        font-size: .9em;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - landing page business</title>
+    <link rel="stylesheet" href="./src/assets/styles/login.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="login">Login</div>
+    </div>
+
+    <form action="#" method="post" id="form-login">
+        <div class="title-form-login">
+            <h1>Business</h1>
+            <a href="./register.html" target="_self">Não tenho uma conta</a>
+        </div>
+
+        <!-- Nome completo -->
+        <div class="control-input-form-login">  
+            <div class="input-label">
+                <label for="name-user">Nome completo</label>
+                <input type="text" name="name-user" id="name-user" placeholder="Nome completo" autofocus >
+            </div>
+
+            <div class="mostrarErroLogin">
+                <span id="nomeErroLogin"></span>
+            </div>
+        </div>
+
+        <!-- E-mail -->
+        <div class="control-input-form-login">
+            <div class="input-label">
+                <label for="email-user">E-mail</label>
+                <input type="email" name="email-user" id="email-user" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="mostrarErroLogin">
+                <span id="emailErroLogin"></span>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="control-input-form-login">
+            <div class="input-label">
+                <label for="password-user">Palavra-passe</label>
+                <input type="password" name="password-user" id="password-user" maxlength="8" placeholder="8 digitos" >
+            </div>
+
+            <div class="mostrarErroLogin">
+                <span id="passwordErroLogin"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-submit-login">Entrar</button>
+    </form>
+
+    <script src="./src/assets/scripts/validate-login.js" defer></script>
+</body>
+</html>

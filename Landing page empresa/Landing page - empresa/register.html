@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - landing page business</title>
+    <link rel="stylesheet" href="./src/assets/styles/register.css">
+</head>
+<body>
+    <div class="container-register">
+        <div class="register">Register</div>
+    </div>
+
+    <form action="" id="form-register">
+        <div class="title-form-register">
+            <h1>Business</h1>
+            <a href="./login.html" target="_self">Tenho uma conta</a>
+        </div>
+
+        <!-- Nome completo -->
+        <div class="control-input-form-register">  
+            <div class="input-label">
+                <label for="name-user">Nome completo</label>
+                <input type="text" name="name-user" id="name-user" placeholder="Nome completo" autofocus>
+            </div>
+
+            <div class="mostrarErrorRegister">
+                <span id="nomeErrorRegister"></span>
+            </div>
+        </div>
+
+        <!-- E-mail -->
+        <div class="control-input-form-register">
+            <div class="input-label">
+                <label for="email-user">E-mail</label>
+                <input type="email" name="email-user" id="email-user" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="mostrarErrorRegister">
+                <span id="emailErrorRegister"></span>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="control-input-form-register">
+            <div class="input-label">
+                <label for="password-user">Palavra-passe</label>
+                <input type="password" name="password-user" id="password-user" maxlength="8" placeholder="8 digitos">
+            </div>
+
+            <div class="mostrarErrorRegister">
+                <span id="passwordErrorRegister"></span>
+            </div>
+        </div>
+
+        <!-- Confirm password -->
+        <div class="control-input-form-register">
+            <div class="input-label">
+                <label for="confirm-password-user">Confirmar palavra-passe</label>
+                <input type="password" name="confirm-password-user" id="confirm-password-user" maxlength="8" placeholder="Confirmar palavra-passe">
+            </div>
+
+            <div class="mostrarErrorRegister">
+                <span id="confirmPassowrdErrorRegister"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-submit-register">Registrar</button>
+    </form>
+
+    <script src="./src/assets/scripts/validate-register.js" defer></script>
+</body>
+</html>

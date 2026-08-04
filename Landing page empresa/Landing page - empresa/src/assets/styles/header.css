@@ -1,0 +1,85 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: #020202;
+    z-index: 2;
+}
+
+/* Botão de menu mobile */
+#header > .menu-desktop > .btn-menu-mobile {
+    display: none;
+}
+
+#header > .menu-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+/* Titulo desktop */
+#header > .menu-desktop > h1 > .titulo-desktop {
+    font-size: .8em;
+    color: #fff;
+}
+
+/* Links */
+#header > .menu-desktop > nav {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+
+        li {
+            font-size: .8em;
+            height: 23px;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 1px solid #ac6aeb;
+            }
+            &:hover a {
+                color: #ac6aeb;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        /* Botão de Login */
+        .btn-login {
+            border: none;
+            background-color: #9459cc;
+            padding: .5rem 2rem;
+            border-radius: 4px;
+            color: #fff;
+            font-size: .8em;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: #9d5ed8;
+            }
+            &:active {
+                transform: scale(.95);
+            }
+        }
+    }
+}
+
+/* Menu mobile */
+#header > .menu-mobile {
+    display: none;
+}
